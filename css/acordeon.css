@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: #f00;
+}
+#divContenedor{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 70px;
+}
+    #divInfo{
+        text-align: center;
+        margin-bottom: 70px;
+        color: #fff;
+    }
+    #divAcordeones{
+        padding: 10px;
+    }
+        
+        #divDerecha{
+            display: inline-block;
+            float: center;
+            box-shadow: 0 0 10px #000;
+            border-radius: 3px;
+            height: 500px;
+        }
+ 
+
+ 
+/* acordeon horizontal */
+.clsAcordeonHorizontal{
+    list-style-type: none;
+}
+    .clsAcordeonHorizontal li{
+        overflow: hidden;
+        float: right;
+    }
+        .clsAcordeonHorizontal li:first-child strong{
+            border-top-right-radius: 3px;
+        }
+        .clsAcordeonHorizontal li:last-child strong{
+            border-top-left-radius: 3px;
+        }
+        .clsAcordeonHorizontal li strong{
+            background: #ADACA2;
+            display: block;
+            padding: 10px 5px;
+            text-align: center;
+        }
+            .clsAcordeonHorizontal li:hover span{
+                width: 800px;
+            }
+        .clsAcordeonHorizontal li span{
+            display: block;
+            width: 0;
+            -webkit-transition: all 0.5s ease-out;
+                -moz-transition: all 0.5s ease-out;
+                    -ms-transition: all 0.5s ease-out;
+                        -o-transition: all 0.5s ease-out;
+                            transition: all 0.5s ease-out;
+        }
+
+
+        #divIzquierda{
+            margin-top: 8px;
+            width: 600px;
+            display: inline-block;
+            box-shadow: 0 0 10px #000;
+            border-radius: 3px;
+        }
+        /* acordeon vertical */
+.clsAcordeonVertical{
+    list-style-type: none;
+}
+    .clsAcordeonVertical li{
+        overflow: hidden;
+    }
+        .clsAcordeonVertical li:first-child strong{
+            border-radius: 3px 3px 0 0;
+        }
+        .clsAcordeonVertical li:last-child strong{
+            border-radius: 0 0 3px 3px;
+        }
+        .clsAcordeonVertical li strong{
+            background: #ADACA2;
+            display: block;
+            padding: 10px 5px;
+            text-align: center;
+        }
+            .clsAcordeonVertical li:last-child:hover strong{
+                border-radius: 0;
+            }
+            .clsAcordeonVertical li:hover span{
+                height: 325px;
+                width: 700px;
+            }
+        .clsAcordeonVertical li span{
+            background-image: url('../images/body-bg.jpg');
+            display: block;
+            color: white;
+            height: 0;
+            -webkit-transition: all 0.3s ease-out;
+                -moz-transition: all 0.3s ease-out;
+                    -ms-transition: all 0.3s ease-out;
+                        -o-transition: all 0.3s ease-out;
+                            transition: all 0.3s ease-out;
+        }
+ 
